@@ -1,0 +1,1508 @@
+/*
+  Help Menu
+  @param {prefix} prefix bot prefix
+  @param {pushname} pushname someone name
+  @returns string
+  @FaxFenzo
+*/
+ var monospace = '```'
+exports.help = (prefix, l) => {
+	return `${monospace}❏ OWNER MENU${monospace}
+${l++}. ➭ ${prefix}react <emoji>
+${l++}. ➭ ${prefix}self
+${l++}. ➭ ${prefix}public
+${l++}. ➭ ${prefix}bcall <query>
+${l++}. ➭ ${prefix}bcgroup <query>
+${l++}. ➭ ${prefix}leave
+${l++}. ➭ ${prefix}chat <query>
+${l++}. ➭ ${prefix}getcase fitur
+${l++}. ➭ ${prefix}bugpc nomor|jumlh|waktu
+${l++}. ➭ ${prefix}buggc id|jumlh|waktu
+${l++}. ➭ ${prefix}antitag <on>
+${l++}. ➭ ${prefix}antitag <off>
+${l++}. ➭ ${prefix}anticall <on>
+${l++}. ➭ ${prefix}anticall <off>
+${l++}. ➭ ${prefix}sendvir <nomor>
+${l++}. ➭ ${prefix}addupdate <text>
+${l++}. ➭ ${prefix}virus
+${l++}. ➭ ${prefix}ban <add> <nomor>
+${l++}. ➭ ${prefix}ban <del> <nomor>
+${l++}. ➭ ${prefix}block
+${l++}. ➭ ${prefix}unblock
+${l++}. ➭ ${prefix}setexif packname|author
+${l++}. ➭ ${prefix}cowner <add/del>
+${l++}. ➭ ${prefix}sewa add <waktu>
+${l++}. ➭ ${prefix}sewa dell
+${l++}. ➭ ${prefix}setbio <text>
+${l++}. ➭ ${prefix}spamsms <nomor>
+${l++}. ➭ >
+${l++}. ➭ =>
+${l++}. ➭ $
+
+❏ START MENU
+${l++}. ➭ ${prefix}menu
+${l++}. ➭ ${prefix}help
+${l++}. ➭ ${prefix}?
+${l++}. ➭ ${prefix}allmenu
+${l++}. ➭ ${prefix}command
+${l++}. ➭ ${prefix}listmenu
+
+${monospace}❏ SERTI MENU${monospace}
+${l++}. ➭ ${prefix}tololserti text
+${l++}. ➭ ${prefix}bucinserti text
+${l++}. ➭ ${prefix}goodboy text
+
+${monospace}❏ ANIME COMMAND${monospace}
+${l++}. ➭ ${prefix}anime <quary>
+${l++}. ➭ ${prefix}animesearch
+${l++}. ➭ ${prefix}waifu
+${l++}. ➭ ${prefix}husbu
+${l++}. ➭ ${prefix}loli
+${l++}. ➭ ${prefix}cosplay
+${l++}. ➭ ${prefix}akira
+${l++}. ➭ ${prefix}toukachan
+${l++}. ➭ ${prefix}boruto
+${l++}. ➭ ${prefix}kurumi
+${l++}. ➭ ${prefix}naruto
+${l++}. ➭ ${prefix}miku
+${l++}. ➭ ${prefix}sasuke
+${l++}. ➭ ${prefix}rize
+${l++}. ➭ ${prefix}hinata
+${l++}. ➭ ${prefix}itori
+${l++}. ➭ ${prefix}kaneki
+${l++}. ➭ ${prefix}minato
+${l++}. ➭ ${prefix}anjing
+
+${monospace}❏ CERPEN COMMAND${monospace}
+${l++}. ➭ ${prefix}cerpen-anak
+${l++}. ➭ ${prefix}cerpen-bahasadaerah
+${l++}. ➭ ${prefix}cerpen-bahasainggris
+${l++}. ➭ ${prefix}cerpen-bahasajawa
+${l++}. ➭ ${prefix}cerpen-bahasasunda
+${l++}. ➭ ${prefix}cerpen-budaya
+${l++}. ➭ ${prefix}cerpen-cinta
+${l++}. ➭ ${prefix}cerpen-cintaislami
+${l++}. ➭ ${prefix}cerpen-cintapertama
+${l++}. ➭ ${prefix}cerpen-cintaromantis
+${l++}. ➭ ${prefix}cerpen-cintasedih
+${l++}. ➭ ${prefix}cerpen-cintasegitiga
+${l++}. ➭ ${prefix}cerpen-cintasejati
+${l++}. ➭ ${prefix}cerpen-galau
+${l++}. ➭ ${prefix}cerpen-gokil
+${l++}. ➭ ${prefix}cerpen-inspiratif
+${l++}. ➭ ${prefix}cerpen-jepang
+${l++}. ➭ ${prefix}cerpen-kehidupan
+${l++}. ➭ ${prefix}cerpen-keluarga
+${l++}. ➭ ${prefix}cerpen-kisahnyata
+${l++}. ➭ ${prefix}cerpen-korea
+${l++}. ➭ ${prefix}cerpen-kristen
+${l++}. ➭ ${prefix}cerpen-liburan
+${l++}. ➭ ${prefix}cerpen-lingkungan
+${l++}. ➭ ${prefix}cerpen-malaysia
+${l++}. ➭ ${prefix}cerpen-mengharukan
+${l++}. ➭ ${prefix}cerpen-misteri
+${l++}. ➭ ${prefix}cerpen-motivasi
+${l++}. ➭ ${prefix}cerpen-nasihat
+${l++}. ➭ ${prefix}cerpen-nasionalisme
+${l++}. ➭ ${prefix}cerpen-olahraga
+${l++}. ➭ ${prefix}cerpen-patahhati
+${l++}. ➭ ${prefix}cerpen-penantian
+${l++}. ➭ ${prefix}cerpen-pendidikan
+${l++}. ➭ ${prefix}cerpen-pengalaman
+${l++}. ➭ ${prefix}cerpen-pengorbanan
+${l++}. ➭ ${prefix}cerpen-penyesalan
+${l++}. ➭ ${prefix}cerpen-perjuangan
+${l++}. ➭ ${prefix}cerpen-perpisahan
+${l++}. ➭ ${prefix}cerpen-persahabatan
+${l++}. ➭ ${prefix}cerpen-petualangan
+${l++}. ➭ ${prefix}cerpen-ramadhan
+${l++}. ➭ ${prefix}cerpen-remaja
+${l++}. ➭ ${prefix}cerpen-rindu
+${l++}. ➭ ${prefix}cerpen-rohani
+${l++}. ➭ ${prefix}cerpen-romantis
+${l++}. ➭ ${prefix}cerpen-sastra
+${l++}. ➭ ${prefix}cerpen-sedih
+${l++}. ➭ ${prefix}cerpen-sejarah
+${l++}. ➭ ${prefix}cerpen-persahabatan
+${l++}. ➭ ${prefix}cerpen-islami
+${l++}. ➭ ${prefix}cerpen-Pengorbanan
+${l++}. ➭ ${prefix}cerpen-cintasegitiga
+${l++}. ➭ ${prefix}cerpen-galau
+
+${monospace}❏ HAPPY MENU${monospace}
+${l++}. ➭ ${prefix}math <query>
+${l++}. ➭ ${prefix}truth
+${l++}. ➭ ${prefix}dare
+${l++}. ➭ ${prefix}tictactoe <query>
+${l++}. ➭ ${prefix}delttt <query>
+${l++}. ➭ ${prefix}family100
+${l++}. ➭ ${prefix}slot
+${l++}. ➭ ${prefix}suitpvp <query>
+${l++}. ➭ ${prefix}cekmati
+${l++}. ➭ ${prefix}wangy
+${l++}. ➭ ${prefix}cekgay
+${l++}. ➭ ${prefix}lesbicek
+${l++}. ➭ ${prefix}cekcantik
+${l++}. ➭ ${prefix}cekganteng
+${l++}. ➭ ${prefix}sangecek
+${l++}. ➭ ${prefix}kapankah
+${l++}. ➭ ${prefix}apakah
+${l++}. ➭ ${prefix}bagaimanakah
+${l++}. ➭ ${prefix}bisakah
+${l++}. ➭ ${prefix}rate
+
+${monospace}❏ PHOTO EDITING${monospace}
+${l++}. ➭ ${prefix}imageinvert
+${l++}. ➭ ${prefix}imagewasted
+${l++}. ➭ ${prefix}1977
+${l++}. ➭ ${prefix}aden
+${l++}. ➭ ${prefix}brannan
+${l++}. ➭ ${prefix}clarendon
+${l++}. ➭ ${prefix}gingham
+${l++}. ➭ ${prefix}hudson
+${l++}. ➭ ${prefix}inkwell
+${l++}. ➭ ${prefix}earlybird
+${l++}. ➭ ${prefix}lofi
+${l++}. ➭ ${prefix}mayfair
+${l++}. ➭ ${prefix}moon
+${l++}. ➭ ${prefix}perpetua
+${l++}. ➭ ${prefix}nashville
+${l++}. ➭ ${prefix}maven
+${l++}. ➭ ${prefix}rise
+${l++}. ➭ ${prefix}slumber
+${l++}. ➭ ${prefix}valencia
+${l++}. ➭ ${prefix}stinson
+${l++}. ➭ ${prefix}toaster
+${l++}. ➭ ${prefix}walden
+${l++}. ➭ ${prefix}reyes
+${l++}. ➭ ${prefix}lark
+${l++}. ➭ ${prefix}kelvin
+${l++}. ➭ ${prefix}xpro2
+${l++}. ➭ ${prefix}willow
+${l++}. ➭ ${prefix}brooklyn
+
+${monospace}❏ GROUP COMMAND${monospace}
+${l++}. ➭ ${prefix}groupsetting
+${l++}. ➭ ${prefix}linkgroup
+${l++}. ➭ ${prefix}setppgc <image>
+${l++}. ➭ ${prefix}setname <text>
+${l++}. ➭ ${prefix}setdesc <text>
+${l++}. ➭ ${prefix}ephemeral <on>
+${l++}. ➭ ${prefix}ephemeral <off>
+${l++}. ➭ ${prefix}hidetag <text>
+${l++}. ➭ ${prefix}tagall <text>
+${l++}. ➭ ${prefix}promote <@tag>
+${l++}. ➭ ${prefix}demote <@tag>
+${l++}. ➭ ${prefix}vote <query>
+${l++}. ➭ ${prefix}devote
+${l++}. ➭ ${prefix}upvote
+${l++}. ➭ ${prefix}cekvote
+${l++}. ➭ ${prefix}hapusvote
+${l++}. ➭ ${prefix}autosticker <on>
+${l++}. ➭ ${prefix}autosticker <off>
+${l++}. ➭ ${prefix}antilink <on>
+${l++}. ➭ ${prefix}nowa 62829282247xx
+${l++}. ➭ ${prefix}antilink <off>
+${l++}. ➭ ${prefix}leveling <on>
+${l++}. ➭ ${prefix}leveling <off>
+${l++}. ➭ ${prefix}welcome <on>
+${l++}. ➭ ${prefix}welcome <off>
+${l++}. ➭ ${prefix}autorevoke <on>
+${l++}. ➭ ${prefix}autorevoke <off>
+${l++}. ➭ ${prefix}add @tag
+${l++}. ➭ ${prefix}kick @tag
+${l++}. ➭ ${prefix}revoke
+${l++}. ➭ ${prefix}group <open>
+${l++}. ➭ ${prefix}group <close>
+${l++}. ➭ ${prefix}editinfo <open>
+${l++}. ➭ ${prefix}editinfo <close>
+
+${monospace}❏ MEDIA COMMAND${monospace}
+${l++}. ➭ ${prefix}detiknews <Info>
+${l++}. ➭ ${prefix}wiki
+${l++}. ➭ ${prefix}gempa
+${l++}. ➭ ${prefix}covidindo
+${l++}. ➭ ${prefix}covid
+${l++}. ➭ ${prefix}jadwaltv <channel>
+${l++}. ➭ ${prefix}cnn
+${l++}. ➭ ${prefix}playstore
+${l++}. ➭ ${prefix}gsmarena
+${l++}. ➭ ${prefix}jadwalbioskop
+${l++}. ➭ ${prefix}nowplayingbioskop
+${l++}. ➭ ${prefix}aminio
+${l++}. ➭ ${prefix}wattpad
+${l++}. ➭ ${prefix}webtoons
+${l++}. ➭ ${prefix}luas-segitiga
+${l++}. ➭ ${prefix}kel-segitiga
+${l++}. ➭ ${prefix}luas-persegi
+${l++}. ➭ ${prefix}pythagoras
+${l++}. ➭ ${prefix}kel-persegi
+${l++}. ➭ ${prefix}kubik
+${l++}. ➭ ${prefix}perkalian
+${l++}. ➭ ${prefix}kuadrat
+
+${monospace}❏ DOWNLOADER MENU${monospace}
+${l++}. ➭ ${prefix}instagram <query>
+${l++}. ➭ ${prefix}tiktok <link>
+${l++}. ➭ ${prefix}tiktoknowm <link>
+${l++}. ➭ ${prefix}tiktokmusic <link>
+${l++}. ➭ ${prefix}ytmp3 <link>
+${l++}. ➭ ${prefix}ytmp4 <link>
+${l++}. ➭ ${prefix}spotify judul
+${l++}. ➭ ${prefix}ytmp35 <link>
+${l++}. ➭ ${prefix}ytmp45 <link>
+${l++}. ➭ ${prefix}twitter <link>
+${l++}. ➭ ${prefix}facebook <link>
+${l++}. ➭ ${prefix}youtube <link>
+${l++}. ➭ ${prefix}igstory <link>
+${l++}. ➭ ${prefix}jpeg <link>
+${l++}. ➭ ${prefix}mp4 <link>
+${l++}. ➭ ${prefix}jooxplay <url>
+
+${monospace}❏ RPG MENU${monospace}
+${l++}. ➭ ${prefix}berburu
+${l++}. ➭ ${prefix}mancing
+${l++}. ➭ ${prefix}menambang
+${l++}. ➭ ${prefix}mining
+${l++}. ➭ ${prefix}heal
+${l++}. ➭ ${prefix}profile
+${l++}. ➭ ${prefix}inventory
+${l++}. ➭ ${prefix}leaderboard
+${l++}. ➭ ${prefix}buy
+${l++}. ➭ ${prefix}sell
+${l++}. ➭ ${prefix}bacok
+${l++}. ➭ ${prefix}darah
+
+${monospace}❏ ISLAMI MENU${monospace}
+${l++}. ➭ ${prefix}iqra
+${l++}. ➭ ${prefix}juzamma
+${l++}. ➭ ${prefix}alquran
+${l++}. ➭ ${prefix}hadist
+
+${monospace}❏ SEARCH COMMAND${monospace}
+${l++}. ➭ ${prefix}spotifysearch
+${l++}. ➭ ${prefix}gimage <query>
+${l++}. ➭ ${prefix}ytsearch <query>
+${l++}. ➭ ${prefix}searchgc <query>
+${l++}. ➭ ${prefix}playmp4 <query>
+${l++}. ➭ ${prefix}playmp3
+${l++}. ➭ ${prefix}play <query>
+${l++}. ➭ ${prefix}happymod <query>
+${l++}. ➭ ${prefix}servermc
+${l++}. ➭ ${prefix}mcpedl <query>
+${l++}. ➭ ${prefix}google <query>
+${l++}. ➭ ${prefix}pinterest <query>
+${l++}. ➭ ${prefix}pixiv
+${l++}. ➭ ${prefix}pixivdl
+${l++}. ➭ ${prefix}ringtone <judul>
+${l++}. ➭ ${prefix}drakor <judul>
+
+${monospace}❏ CONVERT MENU${monospace}
+${l++}. ➭ ${prefix}sticker <image/video>
+${l++}. ➭ ${prefix}attp <text>
+${l++}. ➭ ${prefix}ttp <text>
+${l++}. ➭ ${prefix}ttp2 <text>
+${l++}. ➭ ${prefix}ttp3 <text>
+${l++}. ➭ ${prefix}ttp4 <text>
+${l++}. ➭ ${prefix}ttp5 <text>
+${l++}. ➭ ${prefix}smeme text|text 1
+${l++}. ➭ ${prefix}stickerwm <reply>
+${l++}. ➭ ${prefix}emoji <query>
+${l++}. ➭ ${prefix}emojimix2 😂
+${l++}. ➭ ${prefix}tomp3 <video>
+${l++}. ➭ ${prefix}tovn <video>
+${l++}. ➭ ${prefix}toaudio <video>
+${l++}. ➭ ${prefix}togif <video>
+${l++}. ➭ ${prefix}tourl <query>
+${l++}. ➭ ${prefix}tomp4 <sticker>
+${l++}. ➭ ${prefix}toimg <sticker>
+
+${monospace}❏ STICKER MENU${monospace}
+${l++}. ➭ ${prefix}hub
+${l++}. ➭ ${prefix}pat
+${l++}. ➭ ${prefix}poke2
+${l++}. ➭ ${prefix}stickersearch
+${l++}. ➭ ${prefix}telestick
+${l++}. ➭ ${prefix}sadstick
+${l++}. ➭ ${prefix}patrick
+${l++}. ➭ ${prefix}bucinstick
+${l++}. ➭ ${prefix}dogestick
+${l++}. ➭ ${prefix}gurastick
+${l++}. ➭ ${prefix}smilestick
+${l++}. ➭ ${prefix}cry
+${l++}. ➭ ${prefix}kiss
+${l++}. ➭ ${prefix}kiss2
+${l++}. ➭ ${prefix}dance
+${l++}. ➭ ${prefix}cringe
+${l++}. ➭ ${prefix}smug2
+${l++}. ➭ ${prefix}slap
+${l++}. ➭ ${prefix}wave
+${l++}. ➭ ${prefix}bully
+${l++}. ➭ ${prefix}happy
+${l++}. ➭ ${prefix}smile
+${l++}. ➭ ${prefix}kill
+
+${monospace}❏ TOOLS COMMAND${monospace}
+${l++}. ➭ ${prefix}inspect <query>
+${l++}. ➭ ${prefix}getname <query>
+${l++}. ➭ ${prefix}getpic <query>
+${l++}. ➭ ${prefix}nulis <text>
+${l++}. ➭ ${prefix}nulis2 <text>
+${l++}. ➭ ${prefix}emojimix
+${l++}. ➭ ${prefix}kalkulator <query>
+${l++}. ➭ ${prefix}quoted <query>
+${l++}. ➭ ${prefix}join <link>
+${l++}. ➭ ${prefix}fliptext <query>
+${l++}. ➭ ${prefix}tohuruf <query>
+${l++}. ➭ ${prefix}volume <quer>
+${l++}. ➭ ${prefix}bass <query>
+${l++}. ➭ ${prefix}tempo <query>
+${l++}. ➭ ${prefix}translate <query>
+
+${monospace}❏ NSFW COMMAND${monospace}
+${l++}. ➭ ${prefix}blowjob
+${l++}. ➭ ${prefix}ecchi
+${l++}. ➭ ${prefix}ahegao
+${l++}. ➭ ${prefix}sideoppai
+${l++}. ➭ ${prefix}animefeets
+${l++}. ➭ ${prefix}animebooty
+${l++}. ➭ ${prefix}animethighss
+${l++}. ➭ ${prefix}animearmpits
+${l++}. ➭ ${prefix}lewdanimegirls
+${l++}. ➭ ${prefix}animebellybutton
+${l++}. ➭ ${prefix}biganimetiddies
+${l++}. ➭ ${prefix}hololewd
+${l++}. ➭ ${prefix}yaoi
+
+${monospace}❏ RANDOM COMMAND${monospace}
+${l++}. ➭ ${prefix}coffe
+${l++}. ➭ ${prefix}fml
+${l++}. ➭ ${prefix}bucin
+${l++}. ➭ ${prefix}wallpaper <query>
+${l++}. ➭ ${prefix}wikimedia <query>
+${l++}. ➭ ${prefix}quotesanime
+${l++}. ➭ ${prefix}couple
+${l++}. ➭ ${prefix}fakta-unik
+${l++}. ➭ ${prefix}quotes
+${l++}. ➭ ${prefix}katagalau
+${l++}. ➭ ${prefix}cerpen
+${l++}. ➭ ${prefix}meme
+${l++}. ➭ ${prefix}fotobts
+${l++}. ➭ ${prefix}bj
+${l++}. ➭ ${prefix}ero
+${l++}. ➭ ${prefix}cum
+${l++}. ➭ ${prefix}feet
+${l++}. ➭ ${prefix}yuri
+${l++}. ➭ ${prefix}trap
+${l++}. ➭ ${prefix}lewd
+${l++}. ➭ ${prefix}feed
+${l++}. ➭ ${prefix}solo
+${l++}. ➭ ${prefix}eron
+${l++}. ➭ ${prefix}gasm
+${l++}. ➭ ${prefix}cerpen
+${l++}. ➭ ${prefix}poke
+${l++}. ➭ ${prefix}anal
+${l++}. ➭ ${prefix}holo
+${l++}. ➭ ${prefix}tits
+${l++}. ➭ ${prefix}kuni
+${l++}. ➭ ${prefix}kiss
+${l++}. ➭ ${prefix}erok
+${l++}. ➭ ${prefix}smug
+${l++}. ➭ ${prefix}baka
+${l++}. ➭ ${prefix}solog
+${l++}. ➭ ${prefix}feetg
+${l++}. ➭ ${prefix}lewdk
+${l++}. ➭ ${prefix}pussy
+${l++}. ➭ ${prefix}femdom
+${l++}. ➭ ${prefix}cuddle
+${l++}. ➭ ${prefix}eroyuri
+${l++}. ➭ ${prefix}cum_jpg
+${l++}. ➭ ${prefix}blowjob
+${l++}. ➭ ${prefix}holoero
+${l++}. ➭ ${prefix}erofeet
+${l++}. ➭ ${prefix}classic
+${l++}. ➭ ${prefix}erokemo
+${l++}. ➭ ${prefix}futanari
+${l++}. ➭ ${prefix}fox_girl
+${l++}. ➭ ${prefix}lewdkemo
+${l++}. ➭ ${prefix}pussy_jpg
+${l++}. ➭ ${prefix}kemonomimi
+${l++}. ➭ ${prefix}nsfw_avatar
+${l++}. ➭ ${prefix}art
+${l++}. ➭ ${prefix}bts
+${l++}. ➭ ${prefix}exo
+${l++}. ➭ ${prefix}loli
+${l++}. ➭ ${prefix}elf
+${l++}. ➭ ${prefix}neko
+${l++}. ➭ ${prefix}sagiri
+${l++}. ➭ ${prefix}shinobu
+${l++}. ➭ ${prefix}megumin
+${l++}. ➭ ${prefix}wallnime
+${l++}. ➭ ${prefix}shota
+${l++}. ➭ ${prefix}asupan
+${l++}. ➭ ${prefix}cecan
+${l++}. ➭ ${prefix}cecan-jepan
+${l++}. ➭ ${prefix}cecan-korea
+${l++}. ➭ ${prefix}cecan-vietnam
+${l++}. ➭ ${prefix}cecan-thai
+${l++}. ➭ ${prefix}cecan-malaysia
+${l++}. ➭ ${prefix}cecan-indo
+${l++}. ➭ ${prefix}asupanukhty
+${l++}. ➭ ${prefix}asupansantuy
+${l++}. ➭ ${prefix}hijaber
+
+${monospace}❏ AUDIO MENU${monospace}
+${l++}. ➭ ${prefix}bass
+${l++}. ➭ ${prefix}blown
+${l++}. ➭ ${prefix}deep
+${l++}. ➭ ${prefix}earrape
+${l++}. ➭ ${prefix}fat
+${l++}. ➭ ${prefix}fast
+${l++}. ➭ ${prefix}nightcore
+${l++}. ➭ ${prefix}smooth
+${l++}. ➭ ${prefix}reverse
+${l++}. ➭ ${prefix}tupai
+${l++}. ➭ ${prefix}robot
+${l++}. ➭ ${prefix}slow
+
+${monospace}❏ PHOTTOY MAKER${monospace}
+${l++}. ➭ ${prefix}shadow
+${l++}. ➭ ${prefix}cup
+${l++}. ➭ ${prefix}romance
+${l++}. ➭ ${prefix}smoke
+${l++}. ➭ ${prefix}burnpaper
+${l++}. ➭ ${prefix}lovemessage
+${l++}. ➭ ${prefix}undergrass
+${l++}. ➭ ${prefix}love
+${l++}. ➭ ${prefix}coffe
+${l++}. ➭ ${prefix}woodheart
+${l++}. ➭ ${prefix}woodenboard
+${l++}. ➭ ${prefix}summer3d
+${l++}. ➭ ${prefix}wolfmetal
+${l++}. ➭ ${prefix}nature3d
+${l++}. ➭ ${prefix}underwater
+${l++}. ➭ ${prefix}golderrose
+${l++}. ➭ ${prefix}summernature
+${l++}. ➭ ${prefix}letterleaves
+${l++}. ➭ ${prefix}glowingneon
+${l++}. ➭ ${prefix}fallleaves
+${l++}. ➭ ${prefix}flamming
+${l++}. ➭ ${prefix}harrypotter
+${l++}. ➭ ${prefix}carvedwood
+
+${monospace}❏ EPHOTO MAKER${monospace}
+${l++}. ➭ ${prefix}wetglass
+${l++}. ➭ ${prefix}multicolor3d
+${l++}. ➭ ${prefix}watercolor
+${l++}. ➭ ${prefix}luxurygold
+${l++}. ➭ ${prefix}galaxywallpaper
+${l++}. ➭ ${prefix}lighttext
+${l++}. ➭ ${prefix}beautifulflower
+${l++}. ➭ ${prefix}puppycute
+${l++}. ➭ ${prefix}royaltext
+${l++}. ➭ ${prefix}heartshaped
+${l++}. ➭ ${prefix}birthdaycake
+${l++}. ➭ ${prefix}galaxystyle
+${l++}. ➭ ${prefix}hologram3d
+${l++}. ➭ ${prefix}greenneon
+${l++}. ➭ ${prefix}glossychrome
+${l++}. ➭ ${prefix}greenbush
+${l++}. ➭ ${prefix}metallogo
+${l++}. ➭ ${prefix}noeltext
+${l++}. ➭ ${prefix}glittergold
+${l++}. ➭ ${prefix}textcake
+${l++}. ➭ ${prefix}starsnight
+${l++}. ➭ ${prefix}wooden3d
+${l++}. ➭ ${prefix}textbyname
+${l++}. ➭ ${prefix}writegalacy
+${l++}. ➭ ${prefix}galaxybat
+${l++}. ➭ ${prefix}snow3d
+${l++}. ➭ ${prefix}birthdayday
+${l++}. ➭ ${prefix}goldplaybutton
+${l++}. ➭ ${prefix}silverplaybutton
+${l++}. ➭ ${prefix}freefire
+
+${monospace}❏ PHOTO DUNIA${monospace}
+${l++}. ➭ ${prefix}noir text
+${l++}. ➭ ${prefix}balloon text
+${l++}. ➭ ${prefix}beach-sign text
+${l++}. ➭ ${prefix}airline text
+${l++}. ➭ ${prefix}beach-sign text
+${l++}. ➭ ${prefix}blood_writing text
+${l++}. ➭ ${prefix}bracelet text
+${l++}. ➭ ${prefix}cemetery-gates text
+${l++}. ➭ ${prefix}chalk_writing text
+${l++}. ➭ ${prefix}christmas-writing text
+${l++}. ➭ ${prefix}cookies_writing text
+${l++}. ➭ ${prefix}denim-emdroidery text
+${l++}. ➭ ${prefix}einstein text
+${l++}. ➭ ${prefix}foggy_window_writing text
+${l++}. ➭ ${prefix}fortune-cookie text
+${l++}. ➭ ${prefix}frosty-window-writing text
+${l++}. ➭ ${prefix}haunted-hotel text
+${l++}. ➭ ${prefix}heart_tattoo text
+${l++}. ➭ ${prefix}lipstick-writing text
+${l++}. ➭ ${prefix}led-road-sign text
+${l++}. ➭ ${prefix}love-lock text
+${l++}. ➭ ${prefix}nightmare-writing text
+${l++}. ➭ ${prefix}pendant text
+${l++}. ➭ ${prefix}plane-banner text
+${l++}. ➭ ${prefix}sand_writing text
+${l++}. ➭ ${prefix}snow-sign text
+${l++}. ➭ ${prefix}soup_letters text
+${l++}. ➭ ${prefix}street-sign text
+${l++}. ➭ ${prefix}typewriter text
+${l++}. ➭ ${prefix}water-writing text
+
+${monospace}❏ TEXT PRO MAKER${monospace}
+${l++}. ➭ ${prefix}circuit
+${l++}. ➭ ${prefix}classic8bit
+${l++}. ➭ ${prefix}color-fireworks
+${l++}. ➭ ${prefix}cool-metal
+${l++}. ➭ ${prefix}cutegirl
+${l++}. ➭ ${prefix}dark-gold-metal
+${l++}. ➭ ${prefix}decorated-cookie
+${l++}. ➭ ${prefix}deluxe-gold
+${l++}. ➭ ${prefix}deluxe-silver
+${l++}. ➭ ${prefix}dinamo
+${l++}. ➭ ${prefix}double-exposure
+${l++}. ➭ ${prefix}dragon-fire
+${l++}. ➭ ${prefix}eroded-metal
+${l++}. ➭ ${prefix}fabric-text
+${l++}. ➭ ${prefix}firework
+${l++}. ➭ ${prefix}floraltext
+${l++}. ➭ ${prefix}fox-crossfire
+${l++}. ➭ ${prefix}fun-certify1
+${l++}. ➭ ${prefix}fun-certify2
+${l++}. ➭ ${prefix}futuristic
+${l++}. ➭ ${prefix}galaxy-angel
+${l++}. ➭ ${prefix}galaxy-effect
+${l++}. ➭ ${prefix}galaxy-effect2
+${l++}. ➭ ${prefix}galaxy-text
+${l++}. ➭ ${prefix}galaxy-text-3
+${l++}. ➭ ${prefix}gankk-league-of-kings
+${l++}. ➭ ${prefix}gemstone
+${l++}. ➭ ${prefix}genji-overwatch
+${l++}. ➭ ${prefix}glitchtext
+${l++}. ➭ ${prefix}glossy
+${l++}. ➭ ${prefix}glossy-bluemetal
+${l++}. ➭ ${prefix}glossy-carbon
+${l++}. ➭ ${prefix}glossy-chrome
+${l++}. ➭ ${prefix}gold-avenger
+${l++}. ➭ ${prefix}gold-barcar
+${l++}. ➭ ${prefix}gold-batman
+${l++}. ➭ ${prefix}gold-bird2
+${l++}. ➭ ${prefix}gold-eagle
+${l++}. ➭ ${prefix}gold-effect
+${l++}. ➭ ${prefix}gold-fox
+${l++}. ➭ ${prefix}gold-glitter
+${l++}. ➭ ${prefix}gold-lion
+${l++}. ➭ ${prefix}gold-lion2
+${l++}. ➭ ${prefix}gold-star
+${l++}. ➭ ${prefix}gold-tiger
+${l++}. ➭ ${prefix}golden-letter
+${l++}. ➭ ${prefix}gr-crossfire
+${l++}. ➭ ${prefix}gradientlogo
+${l++}. ➭ ${prefix}graffiti-color
+${l++}. ➭ ${prefix}graffiti-text3
+${l++}. ➭ ${prefix}1917-style
+${l++}. ➭ ${prefix}3d-effect
+${l++}. ➭ ${prefix}3d-rubystone
+${l++}. ➭ ${prefix}3d-text-sub-zombie
+${l++}. ➭ ${prefix}3dengraved
+${l++}. ➭ ${prefix}3dgalaxy-metal
+${l++}. ➭ ${prefix}3dgold
+${l++}. ➭ ${prefix}3dgolden
+${l++}. ➭ ${prefix}3dgradient
+${l++}. ➭ ${prefix}3dlove
+${l++}. ➭ ${prefix}3dluxury
+${l++}. ➭ ${prefix}3dneonlight
+${l++}. ➭ ${prefix}3dpapercut
+${l++}. ➭ ${prefix}3drainbow
+${l++}. ➭ ${prefix}3drealistic
+${l++}. ➭ ${prefix}3drosegold
+${l++}. ➭ ${prefix}3dscifi
+${l++}. ➭ ${prefix}3dsilver
+${l++}. ➭ ${prefix}3dspace
+${l++}. ➭ ${prefix}3dstone
+${l++}. ➭ ${prefix}3dtext-effect
+${l++}. ➭ ${prefix}3dunderwater
+${l++}. ➭ ${prefix}3dvintage
+${l++}. ➭ ${prefix}3dwaterpipe
+${l++}. ➭ ${prefix}alice-league-of-kings
+${l++}. ➭ ${prefix}angel-wing-galaxy
+${l++}. ➭ ${prefix}anubis
+${l++}. ➭ ${prefix}arch-crossfire
+${l++}. ➭ ${prefix}art-shader
+${l++}. ➭ ${prefix}assassins-creed
+${l++}. ➭ ${prefix}avengers
+${l++}. ➭ ${prefix}azzenka-league-of-kings
+${l++}. ➭ ${prefix}balloons-cards
+${l++}. ➭ ${prefix}balloons-love
+${l++}. ➭ ${prefix}bearlogo
+${l++}. ➭ ${prefix}bg-crossfire
+${l++}. ➭ ${prefix}birthday-cake
+${l++}. ➭ ${prefix}birthday-cards
+${l++}. ➭ ${prefix}birthday-greeting
+${l++}. ➭ ${prefix}birthday-roses
+${l++}. ➭ ${prefix}black-metal
+${l++}. ➭ ${prefix}blackpink
+${l++}. ➭ ${prefix}blood-frosted
+${l++}. ➭ ${prefix}blood-text
+${l++}. ➭ ${prefix}blue-effect
+${l++}. ➭ ${prefix}blue-glitter
+${l++}. ➭ ${prefix}brickwall
+${l++}. ➭ ${prefix}brokentext
+${l++}. ➭ ${prefix}bubble-effect
+${l++}. ➭ ${prefix}bulb-effectcase
+${l++}. ➭ ${prefix}8bit text|text
+${l++}. ➭ ${prefix}horror text|text
+${l++}. ➭ ${prefix}retro text|text
+${l++}. ➭ ${prefix}pornhub text|text
+${l++}. ➭ ${prefix}textmaker <option>
+${l++}. ➭ ${prefix}rainbow text
+${l++}. ➭ ${prefix}circuit
+${l++}. ➭ ${prefix}classic8bit
+${l++}. ➭ ${prefix}color-fireworks
+${l++}. ➭ ${prefix}cool-metal
+${l++}. ➭ ${prefix}cutegirl
+${l++}. ➭ ${prefix}dark-gold-metal
+${l++}. ➭ ${prefix}decorated-cookie
+${l++}. ➭ ${prefix}deluxe-gold
+${l++}. ➭ ${prefix}deluxe-silver
+${l++}. ➭ ${prefix}dinamo
+${l++}. ➭ ${prefix}double-exposure
+${l++}. ➭ ${prefix}dragon-fire
+${l++}. ➭ ${prefix}eroded-metal
+${l++}. ➭ ${prefix}fabric-text
+${l++}. ➭ ${prefix}firewor
+${l++}. ➭ ${prefix}floraltext
+${l++}. ➭ ${prefix}fox-crossfire
+${l++}. ➭ ${prefix}fun-certify1
+${l++}. ➭ ${prefix}fun-certify2
+${l++}. ➭ ${prefix}futuristic
+${l++}. ➭ ${prefix}galaxy-angel
+${l++}. ➭ ${prefix}galaxy-effect
+${l++}. ➭ ${prefix}galaxy-effect2
+${l++}. ➭ ${prefix}galaxy-text
+${l++}. ➭ ${prefix}galaxy-text-3
+${l++}. ➭ ${prefix}gankk-league-of-kings
+${l++}. ➭ ${prefix}gemstone
+${l++}. ➭ ${prefix}genji-overwatch
+${l++}. ➭ ${prefix}glitchtext
+${l++}. ➭ ${prefix}glossy
+${l++}. ➭ ${prefix}glossy-bluemetal
+${l++}. ➭ ${prefix}glossy-carbon
+${l++}. ➭ ${prefix}glossy-chrome
+${l++}. ➭ ${prefix}gold-avenger
+${l++}. ➭ ${prefix}gold-barcar
+${l++}. ➭ ${prefix}gold-batman
+${l++}. ➭ ${prefix}gold-bird2
+${l++}. ➭ ${prefix}gold-eagle
+${l++}. ➭ ${prefix}gold-effect
+${l++}. ➭ ${prefix}gold-fox
+${l++}. ➭ ${prefix}gold-glitter
+${l++}. ➭ ${prefix}gold-lion
+${l++}. ➭ ${prefix}gold-lion2
+${l++}. ➭ ${prefix}gold-star
+${l++}. ➭ ${prefix}gold-tiger
+${l++}. ➭ ${prefix}golden-letter
+${l++}. ➭ ${prefix}gr-crossfire
+${l++}. ➭ ${prefix}gradientlogo
+${l++}. ➭ ${prefix}graffiti-color
+${l++}. ➭ ${prefix}graffiti-text3
+${l++}. ➭ ${prefix}1917-style
+${l++}. ➭ ${prefix}3d-effect
+${l++}. ➭ ${prefix}3d-rubystone
+${l++}. ➭ ${prefix}3d-text-sub-zombie
+${l++}. ➭ ${prefix}3dengraved
+${l++}. ➭ ${prefix}3dgalaxy-metal
+${l++}. ➭ ${prefix}3dgold
+${l++}. ➭ ${prefix}3dgolden
+${l++}. ➭ ${prefix}3dgradient
+${l++}. ➭ ${prefix}3dlove
+${l++}. ➭ ${prefix}3dluxury
+${l++}. ➭ ${prefix}3dneonlight
+${l++}. ➭ ${prefix}3dpapercut
+${l++}. ➭ ${prefix}3drainbow
+${l++}. ➭ ${prefix}3drealistic
+${l++}. ➭ ${prefix}3drosegold
+${l++}. ➭ ${prefix}3dscifi
+${l++}. ➭ ${prefix}3dsilver
+${l++}. ➭ ${prefix}3dspace
+${l++}. ➭ ${prefix}3dstone
+${l++}. ➭ ${prefix}3dtext-effect
+${l++}. ➭ ${prefix}3dunderwater
+${l++}. ➭ ${prefix}3dvintage
+${l++}. ➭ ${prefix}3dwaterpipe
+${l++}. ➭ ${prefix}alice-league-of-kings
+${l++}. ➭ ${prefix}angel-wing-galaxy
+${l++}. ➭ ${prefix}anubis
+${l++}. ➭ ${prefix}arch-crossfire
+${l++}. ➭ ${prefix}art-shader
+${l++}. ➭ ${prefix}assassins-creed
+${l++}. ➭ ${prefix}avengers
+${l++}. ➭ ${prefix}azzenka-league-of-kings
+${l++}. ➭ ${prefix}balloons-cards
+${l++}. ➭ ${prefix}balloons-love
+${l++}. ➭ ${prefix}bearlogo
+${l++}. ➭ ${prefix}bg-crossfire
+${l++}. ➭ ${prefix}birthday-cake
+${l++}. ➭ ${prefix}birthday-cards
+${l++}. ➭ ${prefix}birthday-greeting
+${l++}. ➭ ${prefix}birthday-roses
+${l++}. ➭ ${prefix}black-metal
+${l++}. ➭ ${prefix}blackpink
+${l++}. ➭ ${prefix}blood-frosted
+${l++}. ➭ ${prefix}blood-text
+${l++}. ➭ ${prefix}blue-effect 
+${l++}. ➭ ${prefix}blue-glitter
+${l++}. ➭ ${prefix}brickwall
+${l++}. ➭ ${prefix}brokentext
+${l++}. ➭ ${prefix}bubble-effect
+${l++}. ➭ ${prefix}bulb-effect
+${l++}. ➭ ${prefix}sci_fi text
+${l++}. ➭ ${prefix}christmas
+${l++}. ➭ ${prefix}ancient text
+${l++}. ➭ ${prefix}toxic text
+${l++}. ➭ ${prefix}lava text
+${l++}. ➭ ${prefix}neonlight text
+${l++}. ➭ ${prefix}fabric text
+${l++}. ➭ ${prefix}glue text
+${l++}. ➭ ${prefix}luxury text
+${l++}. ➭ ${prefix}underwater
+${l++}. ➭ ${prefix}harrypotter
+${l++}. ➭ ${prefix}steel
+${l++}. ➭ ${prefix}metallic
+${l++}. ➭ ${prefix}graffiti
+${l++}. ➭ ${prefix}pencil
+${l++}. ➭ ${prefix}magma
+${l++}. ➭ ${prefix}sand
+${l++}. ➭ ${prefix}sky
+${l++}. ➭ ${prefix}joker
+${l++}. ➭ ${prefix}hoorror
+${l++}. ➭ ${prefix}whitebear
+${l++}. ➭ ${prefix}thunder
+${l++}. ➭ ${prefix}matrix
+${l++}. ➭ ${prefix}blackpink
+${l++}. ➭ ${prefix}neon
+${l++}. ➭ ${prefix}juice
+${l++}. ➭ ${prefix}batman
+${l++}. ➭ ${prefix}multicolor
+${l++}. ➭ ${prefix}collwall
+${l++}. ➭ ${prefix}wonderful
+${l++}. ➭ ${prefix}cool
+${l++}. ➭ ${prefix}sketch
+${l++}. ➭ ${prefix}marvel
+${l++}. ➭ ${prefix}skeleton
+${l++}. ➭ ${prefix}foggy
+${l++}. ➭ ${prefix}writing
+${l++}. ➭ ${prefix}halloweenfire
+${l++}. ➭ ${prefix}halloween
+${l++}. ➭ ${prefix}watercolor
+${l++}. ➭ ${prefix}classic
+
+${monospace}❏ DATABASE MENU${monospace}
+${l++}. ➭ ${prefix}setcmd <query>
+${l++}. ➭ ${prefix}listcmd
+${l++}. ➭ ${prefix}delcmd <query>
+${l++}. ➭ ${prefix}lockcmd <query>
+${l++}. ➭ ${prefix}addmsg <query>
+${l++}. ➭ ${prefix}listmsg
+${l++}. ➭ ${prefix}getmsg <query>
+${l++}. ➭ ${prefix}delmsg <query>
+
+${monospace}❏ OTHER MENU${monospace}
+${l++}. ➭ ${prefix}owner
+${l++}. ➭ ${prefix}listpc
+${l++}. ➭ ${prefix}listgc
+${l++}. ➭ ${prefix}mcserver
+${l++}. ➭ ${prefix}ping
+${l++}. ➭ ${prefix}afk
+${l++}. ➭ ${prefix}speedtest
+${l++}. ➭ ${prefix}cekupdate [UpdateBot]
+${l++}. ➭ ${prefix}getscmd [GetSticker]
+${l++}. ➭ ${prefix}delete <query>
+${l++}. ➭ ${prefix}infochat <query>
+${l++}. ➭ ${prefix}request <query>
+${l++}. ➭ ${prefix}report <query>
+${l++}. ➭ ${prefix}donate
+${l++}. ➭ ${prefix}listonline
+${l++}. ➭ ${prefix}botgrup
+${l++}. ➭ ${prefix}autostickerpc <on>
+${l++}. ➭ ${prefix}autostickerpc <off>
+${l++}. ➭ ${prefix}ceklolkey
+${l++}. ➭ ${prefix}topglobal
+
+${monospace}Thanks For Watching${monospace}
+${monospace}❏ Baileys
+❏ Fardan 
+❏ Dika Ardnt
+❏ Rzky
+❏ Rama
+❏ Violetics
+❏ Fadly
+❏ Ridho${monospace}`
+}
+
+exports.downloadmenu = (prefix, l) => {
+ return `*── 「 DOWNLOADER 」 ──*
+ 
+${l++}. *${prefix}ytmp3*
+Download audio files 
+Aliases: -
+Usage: *${prefix}ytmp3* link
+
+${l++}. *${prefix}ytmp4*
+Download video files 
+Aliases: -
+Usage: *${prefix}ytmp4* link
+
+${l++}. *${prefix}tiktok*
+Download tiktok Watermark
+Aliases: -
+Usage: *${prefix}tiktok* link
+
+${l++}. *${prefix}tiktoknowm*
+Download tiktok No Watermark
+Aliases: -
+Usage: *${prefix}tiktoknowm*
+
+${l++}. *${prefix}tiktokmusic*
+Download audio files 
+Aliases: -
+Usage: *${prefix}tiktokmusic* link
+
+${l++}. *${prefix}instagram*
+Download audio & video
+Aliases: -
+Usage: *${prefix}instagram* link
+
+${l++}. *${prefix}facebook*
+Download Video files 
+Aliases: -
+Usage: *${prefix}facebook* link
+
+${l++}. *${prefix}twitter*
+Download Video Twitter
+Aliases: -
+Usage: *${prefix}twitter* link
+
+`
+}
+exports.grupmenu = (prefix, l) => {
+return `*── 「 MODERATION 」 ──*
+
+${l++}. *${prefix}antilink*
+Activate & Deactivate Antilink Features
+Aliases: -
+Usage: *${prefix}antilink* enable & disable
+
+${l++}. *${prefix}leveling*
+Activate & Deactivate Level Features
+Aliases: -
+Usage: *${prefix}leveling* enable & disable
+
+${l++}. *${prefix}promote*
+Mengubah Member Menjadi Admin
+Aliases: -
+Usage: *${prefix}promote* @tag
+
+${l++}. *${prefix}demote*
+mengubah Admin Menjadi Member
+Aliases: -
+Usage: *${prefix}demote* @tag
+
+${l++}. *${prefix}autosticker*
+Menuconvert Foto Menjadi Stic Secara Otomatis
+Aliases: -
+Usage: *${prefix}autosticker* enable & disable
+
+${l++}. *${prefix}autorevoke*
+Reset Link Group
+Aliases: -
+Usage: *${prefix}autorevoke* enable & disabe
+
+${l++}. *${prefix}tagall*
+---
+Aliases: -
+Usage: *${prefix}tagall* text
+
+${l++}. *${prefix}hidetag*
+---
+Aliases: -
+Usage: *${prefix}hidetag* text
+
+${l++}. *${prefix}ephemeral*
+Pesan Otomatis
+Aliases: -
+Usage: *${prefix}ephemeral* enable & disable
+
+${l++}. *${prefix}welcome*
+Welcoming Members 
+Aliases: -
+Usage: *${prefix}welcome* enable & disable
+
+${l++}. *${prefix}add*
+Menambah Peserta
+Aliases: -
+Usage: *${prefix}add* 6285xxx
+
+${l++}. *${prefix}kick*
+Mengeluarkan Member
+Aliases: -
+Usage: *${prefix}kick* @tag
+
+${l++}. *${prefix}group*
+Membuka & Menutup Group
+Aliases: -
+Usage: *${prefix}group* open & close
+
+${l++}. *${prefix}setppgc*
+Mengubah Tampilan profil Grup
+Aliases: -
+Usage: *${prefix}setppgc*
+
+${l++}. *${prefix}revoke*
+Reset link
+Aliases: -
+Usage: *${prefix}revoke*
+
+${l++}. *${prefix}vote*
+Vote & Delote ( memberi Saran )
+Aliases: -
+Usage: *${prefix}vote*
+${prefix}vote <query>
+${prefix}devote
+${prefix}upvote
+l${prefix}cekvote
+${prefix}hapusvote
+
+${l++}. *${prefix}setname*
+Mengubah Nama Group
+Aliases: -
+Usage: *${prefix}setname* text
+`
+}
+exports.ownermenu = (prefix, l) => {
+return `*── 「 OWNER MENU 」 ──*
+
+Hai Owner Bot >\<
+
+${l++}. *${prefix}react*
+Memberikan Emote Pada Pesan
+Aliases: -messagetype
+Usage: *${prefix}react* ❤️
+
+${l++}. *${prefix}self*
+Mengubah Status Bot Menjadi Self
+Aliases: -
+Usage: *${prefix}self*
+
+${l++}. *${prefix}public*
+Mengubah Status Bot Menjadi Public ( Dapatkan Di Gunakan Semua Fitur )
+Aliases: -
+Usage: *${prefix}public*
+
+${l++}. *${prefix}bcall*
+Mengirim Semua Pesan Ke User Bot
+Aliases: -
+Usage: *${prefix}bcall* text
+
+${l++}. *${prefix}antitag*
+---
+Aliases: -
+Usage: *${prefix}antitag* enable & disable
+
+${l++}. *${prefix}getcase*
+Memberi Kan Fitur Bot
+Aliases: -
+Usage: *${prefix}getcase* fitur
+
+${l++}. *${prefix}ban*
+Ban & Block User Bot
+Aliases: -
+Usage: *${prefix}ban* add & del 6285xxxx
+
+${l++}. *${prefix}setexif*
+Mengubah Watermark Stick
+Aliases: -
+Usage: *${prefix}setexif* nama|author
+
+${l++}. *${prefix}cowner*
+Menambah Owner Bot
+Aliases: -
+Usage: *${prefix}cowner* add & del 6285xxxx
+
+${l++}. *${prefix}sewa*
+Expired Date Group
+Aliases: -
+Usage: *${prefix}sewa* add waktu
+-s = Detik
+-d = Hari
+-h = Jam
+
+${l++}. *${prefix}setstatus*
+Setstatus Bot & bio
+Aliases: -
+Usage: *${prefix}setstatus* text
+
+${l++}. *${prefix}join*
+bot masuk ke group.
+Aliases: -
+Usage: *${prefix}join* link
+
+`
+}
+exports.convert = (prefix, l) => {
+return `*── 「  STICKER 」 ──*
+
+${l++}. *${prefix}sticker*
+Mengubah Foto > Sticker.
+Aliases: *stickergif*,
+Usage: *${prefix}sticker* reply image
+
+${l++}. *${prefix}tourl*
+Convert File Ke link.
+Aliases: -
+Usage: *${prefix}tourl* reply file
+
+${l++}. *${prefix}toaudio*
+-
+Aliases: -
+Usage: *${prefix}toaudio* reply video
+
+${l++}. *${prefix}toimg*
+Mengubah Sticker Ke Foto.
+Aliases: -*#toimg*, *#tomp4*, *#togif*,
+Usage: reply sticker Dengan Caption *${prefix}toimg*
+
+${l++}. *${prefix}emoji*
+convert emoji ke sticker.
+Aliases: -
+Usage: *${prefix}emoji* 😂
+
+${l++}. *${prefix}smeme*
+Membuat Stickmeme.
+Aliases: -
+Usage: *${prefix}smeme* text
+
+${l++}. *${prefix}ttp*
+Membuat Sticker text.
+Aliases: -
+Usage: *${prefix}ttp* text.
+
+${l++}. *${prefix}ttp2*
+Membuat sticker Text.
+Aliases: -
+Usage: *${prefix}ttp2* text.
+
+${l++}. *${prefix}ttp3*
+Membuat sticker text.
+Aliases: -
+Usage: *${prefix}ttp3*
+
+${l++}. *${prefix}ttp4*
+Membuat Sticker Text.
+Aliases: -
+Usage: *${prefix}ttp4*
+
+${l++}. *${prefix}ttp5*
+Membuat Sticker Text.
+Aliases: -
+Usage: *${prefix}ttp5*
+
+${l++}. *${prefix}attp*
+Membuat Sticker Text.
+Aliases: -
+Usage: *${prefix}attp* text
+
+${l++}. *${prefix}stickerwm*
+Membuat Sticker Watermark
+Aliases: -
+Usage: *${prefix}stickerwm*
+
+${l++}. *${prefix}smilestick*
+Search Sticker
+Aliases: -
+Usage: *${prefix}smilestick*
+
+${l++}. *${prefix}gurastick*
+Search Sticker
+Aliases: -
+Usage: *${prefix}gurastick*
+
+${l++}. *${prefix}dogestick*
+Search Sticker
+Aliases: -
+Usage: *${prefix}dogestick*
+
+${l++}. *${prefix}bucinstick*
+Search Sticker
+Aliases: -
+Usage: *${prefix}bucinstick*
+
+${l++}. *${prefix}patrick*
+Search Sticker
+Aliases: -
+Usage: *${prefix}patrick*
+
+${l++}. *${prefix}telestick*
+Search Sticker
+Aliases: -
+Usage: *${prefix}telestick*
+
+${l++}. *${prefix}stickersearch*
+Search Sticker
+Aliases: -
+Usage: *${prefix}stickersearch*
+
+${l++}. *${prefix}sadstick*
+Search Sticker
+Aliases: -
+Usage: *${prefix}sadstick*
+`
+}
+exports.praymenu = (prefix, l) => {
+return `*── 「  PRAY 」 ──*
+
+${l++}. *${prefix}iqra*
+Belajar & Mendengar Audio
+Aliases: -
+Usage: *${prefix}iqra*
+
+${l++}. *${prefix}alquran*
+Memberikan audio bacaan surah
+Aliases: -
+Usage: alquran 1 2
+1 untuk surah 
+2 untuk ayat
+pengguna : #alquran 2 34
+
+${l++}. *${prefix}hadist*
+Hadist
+Aliases: -
+Usage: *${prefix}hadist*
+
+${l++}. *${prefix}jadwalsholat*
+Memberikan Informasi Seputar Jadwal di Indonesia
+Aliases: -
+Usage: *${prefix}jadwalsholat* daerah
+
+`
+}
+exports.mediamenu = (prefix, l) => {
+return `*── 「  MEDIA AND MISC 」 ──*
+
+${l++}. *${prefix}yts*
+Search Results YouTube.
+Aliases: Downloader
+Usage: *${prefix}ytsearch* judul
+
+${l++}. *${prefix}ringtone*
+Random Audio.
+Aliases: -
+Usage: *${prefix}ringtone* judul
+
+${l++}. *${prefix}drakor*
+Mencari Drakor Dari Bot.
+Aliases: -
+Usage: *${prefix}drakor* judul
+
+${l++}. *${prefix}pinterest*
+Search Image Result.
+Aliases: -
+Usage: *${prefix}pinterest* judul
+
+${l++}. *${prefix}happymod*
+Search Apk.
+Aliases: *#happymod*, *#apk*,
+Usage: *${prefix}happymod* apk
+
+${l++}. *${prefix}google*
+Search Text Dari Google.
+Aliases: -
+Usage: *${prefix}google* text
+
+${l++}. *${prefix}servermc*
+---
+Aliases: -
+Usage: *${prefix}servermc*
+
+${l++}. *${prefix}mcpedl*
+--
+Aliases: -
+Usage: *${prefix}mcpedl*
+
+${l++}. *${prefix}detiknews*
+Info Dari detiknews.com.
+Aliases: -
+Usage: *${prefix}detiknews* info
+
+${l++}. *${prefix}wiki*
+Info Dari Wiki Yang Di berikan.
+Aliases: -
+Usage: *${prefix}wiki*
+
+${l++}. *${prefix}covid*
+Jumlah Covid Global.
+Aliases: -
+Usage: *${prefix}covid*
+
+${l++}. *${prefix}covidindo*
+Jumlah covid Indonesia.
+Aliases: -
+Usage: *${prefix}covidindo*
+
+${l++}. *${prefix}gempa*
+Search Informasi gempa.
+Aliases: -
+Usage: *${prefix}gempa*
+
+${l++}. *${prefix}jadwaltv*
+Informasi Seputar Chanel.
+Aliases: -
+Usage: *${prefix}jadwaltv* rcti
+
+${l++}. *${prefix}jadwalbioskop*
+Jadwal bioskop Indonesia.
+Aliases: -
+Usage: *${prefix}jadwalbioskop* daerah
+
+${l++}. *${prefix}gsmarena*
+Infomedia hp.
+Aliases: -
+Usage: *${prefix}gsmarena* model_hp.
+
+`
+}
+exports.photo = (prefix, l) => {
+return `*── 「 PHOTO EDITING  」 ──*
+
+
+${l++}. *${prefix}imageinvert*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix}imageinvert*.
+
+${l++}. *${prefix}xpro2*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} xpro2*.
+
+${l++}. *${prefix}kelvin*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} kelvin*.
+
+${l++}. *${prefix}willow*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} willow*.
+
+${l++}. *${prefix}lark*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} lark*.
+
+${l++}. *${prefix}reyes*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} reyes*.
+
+${l++}. *${prefix}walden*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} walden*.
+
+${l++}. *${prefix}toaster*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} toaster*.
+
+${l++}. *${prefix}stinson*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} stinson*.
+
+${l++}. *${prefix}valencia*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} valencia*.
+
+${l++}. *${prefix}slumber*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} slumber*.
+
+${l++}. *${prefix}1977*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} 1977*.
+
+${l++}. *${prefix}imagewasted*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} imagewasted*.
+
+${l++}. *${prefix}aden*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} aden*.
+
+${l++}. *${prefix}brannan*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} brannan*.
+
+${l++}. *${prefix}clarendon*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} clarendon*.
+
+${l++}. *${prefix}gingham*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} gingham*.
+
+${l++}. *${prefix}hudson*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} hudson*.
+
+${l++}. *${prefix}earlybird*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} earlybird*.
+
+${l++}. *${prefix}rise*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} rise*.
+
+${l++}. *${prefix}maven*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} maven*.
+
+${l++}. *${prefix}nashville*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} nashville*.
+
+${l++}. *${prefix}perpetua*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} perpetua*.
+
+${l++}. *${prefix}moon*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} moon*.
+
+${l++}. *${prefix}lofi*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} lofi*.
+
+${l++}. *${prefix}mayfair*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} mayfair*.
+
+${l++}. *${prefix}perpetua*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} perpetua*.
+
+${l++}. *${prefix}moon*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} moon*.
+
+${l++}. *${prefix}mayfair*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} mayfair*.
+
+${l++}. *${prefix}nashville*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} nashville*.
+
+${l++}. *${prefix}lofi*
+Mengubah Tampilan Foto.
+Aliases: -
+Usage: Reply Foto Dengan Caption *${prefix} lofi*.
+
+`
+}
+exports.textmaker = (prefix, l) => {
+return `*── 「  TEXT MAKER 」 ──*
+
+Pengguna : ${prefix}rainbow Bela
+
+│ ${prefix}textmaker <option>
+│ ${prefix}rainbow text
+│ ${prefix}sci_fi text
+│ ${prefix}christmas
+│ ${prefix}ancient text
+│ ${prefix}toxic text
+│ ${prefix}tolol text
+│ ${prefix}lava text
+│ ${prefix}neonlight text
+│ ${prefix}fabric text
+│ ${prefix}glue text
+│ ${prefix}luxury text
+│ ${prefix}underwater
+│ ${prefix}harrypotter
+│ ${prefix}steel
+│ ${prefix}metallic
+│ ${prefix}graffiti
+│ ${prefix}pencil
+│ ${prefix}magma
+│ ${prefix}sand
+│ ${prefix}sky
+│ ${prefix}joker
+│ ${prefix}hoorror
+│ ${prefix}whitebear
+│ ${prefix}thunder
+│ ${prefix}matrix
+│ ${prefix}blackpink
+│ ${prefix}neon
+│ ${prefix}juice
+│ ${prefix}batman
+│ ${prefix}multicolor
+│ ${prefix}collwall
+│ ${prefix}wonderful
+│ ${prefix}cool
+│ ${prefix}sketch
+│ ${prefix}marvel
+│ ${prefix}skeleton
+│ ${prefix}foggy
+│ ${prefix}writing
+│ ${prefix}halloweenfire
+│ ${prefix}halloween
+│ ${prefix}watercolor
+│ ${prefix}classic
+│ ${prefix}8bit text|text
+│ ${prefix}horror text|text
+│ ${prefix}retro text|text
+│ ${prefix}pornhub text|text
+`
+}
+exports.donate = (prefix, l) => {
+	return `*── 「 DONATE 」 ──*
+
+Kalian bisa mendukung saya agar bot ini tetap up to date dengan:
+https://saweria.co/FaxBotz (OVO/Dana/GoPay)
+
+Atau kalian juga bisa donasi melalui QRis diatas.
+
+Terima kasih!
+
+Contact person Owner:
+wa.me/6281523940672 (Owner)
+
+Untuk melihat script yang bot gunakan,ketik ${prefix}sc`
+}
